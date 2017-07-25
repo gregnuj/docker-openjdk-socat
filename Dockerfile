@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     socat && \
     rm -rf /var/lib/apt/lists/*
 
-COPY ./entrypoint /usr/local/bin/entrypoint
+COPY ./entrypoint.sh /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT /usr/local/bin/entrypoint
+ENTRYPOINT /usr/local/bin/entrypoint.sh
