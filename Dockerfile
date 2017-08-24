@@ -8,5 +8,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY *.sh /usr/local/bin/
 RUN chmod 755 /usr/local/bin/*.sh
 
-EXPOSE 1500
 ENTRYPOINT /usr/local/bin/entrypoint.sh
