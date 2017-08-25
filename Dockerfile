@@ -7,5 +7,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ## Copy entrypoint script(s)
 COPY *.sh /usr/local/bin/
 RUN chmod 755 /usr/local/bin/*.sh
-
-ENTRYPOINT /usr/local/bin/entrypoint.sh
